@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    font-family: 'Open Sans',sans-serif;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin: 5px;
+}
+
+.slider ul {
+    width: 100%;
+    transition: 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider ul li {
+    margin-block: 1.4rem;
+    margin-inline: 1.3rem;
+    list-style: none;
+    
+}
+.slider ul li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.slider ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.green {
+    background-color: rgb(16, 162, 16);
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+.menu-icon {
+    display: none;
+
+}
+.closed {
+    display: none;
+}
+    .cartBtn {
+        margin-bottom: 10px;
+        width: 47px;
+        height: 47px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+        img {
+            position: absolute;
+            margin: 14px;
+        }  
+    }
+    .cartBtn:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+@media (max-width:900px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+     
+    }
+    .logo{
+        display: none;
+    }
+    .slider {
+        position: fixed;
+        min-width: 100%;
+        height: 70vh;
+        top: -100%;
+        left: 0.2px;
+        background-color: black;
+        transition: .7s ease;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .slider.active {
+        top: 0;
+        transition: .7s ease;
+    }
+
+    .slider ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .slider ul li {
+        margin-block: .8rem;
+        list-style: none;
+    }
+
+    .slider ul li a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+  
+    .menu-icon {
+        margin-left: 15px;
+        margin-bottom: 15px;
+        display: block;
+        font-size: 50px;
+        cursor: pointer;
+        color: wheat;
+    }
+
+    .closed {
+        margin: 10px 15px;
+        display: block;
+        cursor: pointer;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .cartBtn{
+        margin: 10px;
+        margin-right: 17px;
+    }
+        .cartBtn:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+}
