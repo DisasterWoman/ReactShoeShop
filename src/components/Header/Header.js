@@ -9,9 +9,11 @@ function Header() {
   return (
     <header className="header">
       <div className='logo cu-p'>
-        <img className='logo mr-30' alt='logo' src='/images/logo.png' width={185} height={65} ></img>
+      <Link to='/' >
+          <img className='logo mr-20' alt='logo' src='/images/logo.png' width={220} height={70} ></img>
+      </Link>
       </div>
-      <div className='menu-icon'>
+       <div className='menu-icon'>
         <MaterialIcon color='#fff' icon="menu" onClick={showMenu} /></div>
       <nav className={active ? 'slider active' : 'slider'}>
         <ul onClick={showMenu} >

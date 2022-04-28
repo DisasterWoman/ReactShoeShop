@@ -1,0 +1,140 @@
+{
+    "info": [
+        {
+            "id": 1,
+            "title": "Nike Blazer Mid Suede",
+            "priceBefore": 3500,
+            "price": 2500,
+            "imageUrl": "./images/1-slider.png"
+        },
+        {
+            "id": 2,
+            "title": "Nike Air Max 270",
+            "priceBefore": 2500,
+            "price": 1400,
+            "imageUrl": "./images/2-slider.png"
+        },
+        {
+            "id": 3,
+            "title": "Nike air huaracher",
+            "priceBefore": 1000,
+            "price": 850,
+            "imageUrl": "./images/3-slider.png"
+        },
+        {
+            "id": 4,
+            "title": "Nike Blazer Mid Suede",
+            "priceBefore": 1600,
+            "price": 1100,
+            "imageUrl": "./images/4-slider.png"
+        },
+        {
+            "id": 5,
+            "title": "Under Armour Curry 8",
+            "priceBefore": 1300,
+            "price": 800,
+            "imageUrl": "/images/5-slider.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Jordan Air Jordan 11",
+            "priceBefore": 2200,
+            "price": 1900,
+            "imageUrl": "/images/8-slider.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Nike LeBron XVIII",
+            "priceBefore": 1200,
+            "price": 900,
+            "imageUrl": "/images/9-slider.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Nike Lebron XVIII Low ",
+            "priceBefore": 1600,
+            "price": 1000,
+            "imageUrl": "/images/10-slider.jpg"
+        }
+    ],
+
+    "exclusive": [
+        {
+            "id": 1,
+            "image": "./images/1-exclusive.png",
+            "name": "Jordan Delta 2",
+            "priceBefore": 1200,
+            "price":900
+        },
+        {
+            "id": 2,
+            "image": "./images/2-exclusive.png",
+            "name": "Nike Air Jordan XT",
+            "priceBefore": 1400,
+            "price":1200
+        },
+        {
+            "id": 3,
+            "image": "./images/3-exclusive.png",
+            "name": "RS-X-INTL Game",
+            "priceBefore": 1200,
+            "price":900
+        },
+        {
+            "id": 4,
+            "image": "./images/4-exclusive.png",
+            "name": "NMD 1 Refined",
+            "priceBefore": 1100,
+            "price":1000
+        },
+        {
+            "id": 5,
+            "image": "./images/5-exclusive.png",
+            "name": "Superstar Classic",
+            "priceBefore": 900,
+            "price":500
+        },
+        {
+            "id": 6,
+            "image": "./images/6-exclusive.png",
+            "name": "Puma X Aka Boku",
+            "priceBefore": 1200,
+            "price":750
+        },
+        {
+            "id": 7,
+            "image": "./images/7-exclusive.png",
+            "name": "RS-X-INTL Game",
+            "priceBefore": 1250,
+            "price":800
+        },
+        {
+            "id": 8,
+            "image": "./images/8-exclusive.png",
+            "name": "Suede Classic",
+            "priceBefore": 1230,
+            "price":800
+        },
+        {
+            "id": 9,
+            "image": "./images/9-exclusive.png",
+            "name": "NMD 1 Refined",
+            "priceBefore": 1230,
+            "price":800
+        },
+        {
+            "id": 10,
+            "image": "./images/10-exclusive.png",
+            "name": "Superstar Classic",
+            "priceBefore": 1630,
+            "price":840
+        },
+        {
+            "id": 11,
+            "image": "./images/11-exclusive.png",
+            "name": "Adiddas Beluga",
+            "priceBefore": 1230,
+            "price":940
+        }
+    ]
+}

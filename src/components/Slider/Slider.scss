@@ -1,0 +1,58 @@
+.carousel-card{
+    margin: 20px;
+    padding: 0;
+    border: 1px solid #fff;
+    width: 250px;
+    height: 130px;
+    border-radius: 20px;
+    background:#fff;
+    color:black;
+
+}
+/* square buttons */
+.rec.rec-arrow {
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.rec-arrow-left{
+    width: 65px;
+    height: 65px;
+}
+.rec.rec-dot{
+    background-color: #fff;
+}
+
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+    background-color: #fff;
+    border-radius: 50%;
+}
+.prices{
+    color: black;
+    h3 {
+        font-size: 16px;
+        text-decoration: line-through;
+    }
+    
+    h2 {
+        color: #FF0000;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    user-select: none;
+}
+@media (max-width:900px) {
+    .exclusive,
+    .rec-carousel-wrapper {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+
+
