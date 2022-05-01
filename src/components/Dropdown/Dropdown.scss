@@ -1,0 +1,162 @@
+.catalog {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    p {
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+.arrow {
+    transition: 1s ease-in-out;
+}
+h5{
+    font-size: 1rem;
+    margin: 5px;
+}
+.dropdown{
+.dropdown-content, .brand-content, .size-content{
+    margin-right: 20px;
+    background: #0b0b0b;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 3px;
+    width: 100%;
+    padding: 5px;
+    
+}
+.size-box{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    margin: 3px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+    .socialBtn {
+        margin: 10px;
+        margin-bottom: 15px;
+        width: 35px;
+        height: 35px;
+        border-radius: 14px;
+        background: #FFFFFF;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+    }
+        img {
+            margin: 8px;
+        }
+        .socialBtn:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+.brand-content, .dropdown-content{
+    .dropdown-brand, .dropdown-item{
+        color: #fff;
+        display: flex;
+        margin: 5px;
+    }
+    .label{
+        margin-right: 5px;
+    }
+    .label_checkbox {
+        display: none;
+    }
+    .label_check{
+        display: inline-block;
+        border-radius: 50%;
+        border: 5px solid rgba(8, 7, 7, 0.1);
+        background: rgb(239, 233, 233);
+        vertical-align: middle;
+        width: 1.4em;
+        height: 1.4em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border .3s ease;
+    }
+    img{
+    
+        opacity: 0.3;
+        color: transparent;
+        transition: opacity .3s .1s ease;
+        -webkit-text-stroke: 3px rgba(0, 0, 0, .5);
+    }
+    .label_check:hover {
+        border: 5px solid rgba(0, 0, 0, 0.2);
+    }
+    .label_checkbox:checked + .label_text .label_check {
+        animation: check .5s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards;
+        .icon {
+            opacity: 1;
+            transform: scale(0);
+            color: rgb(138, 127, 127);
+            -webkit-text-stroke: 0;
+            animation: icon .3s cubic-bezier(1.000, 0.008, 0.565, 1.650) .1s 1 forwards;
+        }
+    }
+  
+    @keyframes icon {
+        from {
+            opacity: 0;
+            transform: scale(0.3);
+        }
+    
+        to {
+            opacity: 1;
+            transform: scale(1)
+        }
+    }
+    
+    @keyframes check {
+        0% {
+            width: 1.3em;
+            height: 1.3em;
+            border-width: 5px;
+        }
+    
+        10% {
+            width: 1.3em;
+            height: 1.3em;
+            opacity: 0.1;
+            background: rgba(0, 0, 0, 0.2);
+            border-width: 15px;
+        }
+    
+        12% {
+            width: 1.3em;
+            height: 1.3em;
+            opacity: 0.4;
+            background: rgba(0, 0, 0, 0.1);
+            border-width: 0;
+        }
+    
+        50% {
+            width: 1.5em;
+            height: 1.5em;
+            background: #00d478;
+            border: 0;
+            opacity: 0.6;
+        }
+    
+        100% {
+            width: 1.6em;
+            height: 1.6em;
+            background: #00d478;
+            border: 0;
+            opacity: 1;
+        }
+    }
+}
+}

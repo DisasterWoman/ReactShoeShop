@@ -123,18 +123,24 @@
             "price":800
         },
         {
-            "id": 10,
-            "image": "./images/10-exclusive.png",
-            "name": "Superstar Classic",
-            "priceBefore": 1630,
-            "price":840
-        },
-        {
             "id": 11,
             "image": "./images/11-exclusive.png",
             "name": "Adiddas Beluga",
             "priceBefore": 1230,
             "price":940
         }
+    ],
+    "options":[
+            "Sneakers ",
+             "Clothes",
+             "Accessories"
+        
+    ],
+    "brands":[
+    "Adidas", "Jordan", "Nike", "Fila", "Gucci", "Balenciaga"
+    ],
+    "size": [
+        32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46
     ]
+
 }

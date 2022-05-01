@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import './Sneakers.scss';
 import { GlobalContext } from '../../App';
 import Exclusive from '../../components/EcxlusiveCard/Exclusive';
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 
 function Sneakers() {
     const [value, setValues] = React.useState('');
     const { exItems } = React.useContext(GlobalContext);
+    const [selected, setSelected] = React.useState("Catalog");
+
 
     const resetInputField = () => {
         return setValues("");
@@ -38,19 +41,27 @@ function Sneakers() {
                   <img src='/images/ccart.png' width={20} height={20}></img>
               </div>
     </div>
-          <div className='card-items d-flex justify-around flex-wrap'>
-    {exItems
-        .filter((obj) => obj.name.toLowerCase().includes(value.toLowerCase())) 
-        .map((obj,index) => (
-        <Exclusive
-            key={index}
-            name={obj.name}
-            image={obj.image}
-            priceBefore={obj.priceBefore}
-            price={obj.price}
-        />
-        ))}
+    <div className='sneaker-content d-flex justify-between'>
+              {/* custom dropdown menu */}
+              <Dropdown selected={selected} setSelected={setSelected} />
+              <br />
+              <br />
+              <br />
+              <div className='card-items d-flex justify-around flex-wrap ml-20'>
+                  {exItems
+                      .filter((obj) => obj.name.toLowerCase().includes(value.toLowerCase()))
+                      .map((obj, index) => (
+                          <Exclusive
+                              key={index}
+                              name={obj.name}
+                              image={obj.image}
+                              priceBefore={obj.priceBefore}
+                              price={obj.price}
+                          />
+                      ))}
+              </div>
     </div>
+          
     </div>
 
   )
