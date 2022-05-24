@@ -17,7 +17,7 @@ function Home() {
         { width: 1000, itemsToShow: 4 },
     ]
   return (
-    <>
+    <div>
           <Content />
           <div className='d-flex flex-wrap align-center mb-30 m-20'>
               <Carousel
@@ -36,7 +36,7 @@ function Home() {
               </Carousel>
           </div>
           <Advertisement />
-    </>
+      </div>
   )
 }
 

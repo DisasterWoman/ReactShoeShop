@@ -4,67 +4,97 @@ import './Sneakers.scss';
 import { GlobalContext } from '../../App';
 import Exclusive from '../../components/EcxlusiveCard/Exclusive';
 import Dropdown from '../../components/Dropdown/Dropdown';
+import axios from 'axios';
+import { Pagination } from '../../components/Pagination/Pagination';
+import Header from '../../components/Header/Header';
+function Sneakers({ active}) {
 
-
-function Sneakers() {
     const [value, setValues] = React.useState('');
-    const { exItems } = React.useContext(GlobalContext);
+    const { exItems, setExItems } = React.useContext(GlobalContext);
     const [selected, setSelected] = React.useState("Catalog");
+    const [loading, setLoading] = React.useState(false);
+    const [currentPage, setCurrentPage] = React.useState(1);
+    const [postsPerPage] = React.useState(6);
+
 
 
     const resetInputField = () => {
         return setValues("");
     };
-  return (
-      <div className='sneakers-wrap ml-50 mr-50'>
-          <div className='search-header d-flex align-center justify-between '>
-              <Link to='/' >
-                  <img className='logo' alt='logo' src='/images/logo.png' width={220} height={70} ></img>
-              </Link>
-                  <div className="search-container d-flex align-center justify-between mb-40">
-                  <div className='search-block d-flex'>
-                      <img className='mr-20 mt-10 mb-5' src='images/search.svg' width={12} height={13} ></img>
-                      <input placeholder='Search...'
-                          value={value}
-                          onChange={(event) => setValues(event.target.value)
-                          }
-                      ></input>
-                      {value && (<img
-                          onClick={resetInputField}
-                          className='mr-5 mt-10 mb-5 remove'
-                          src='/images/remove-btn.svg'
-                          width={12} height={13}
-                      ></img>)}
-                  </div>
-            </div>
-              <div className='cartBtn'>
-                  <img src='/images/ccart.png' width={20} height={20}></img>
-              </div>
-    </div>
-    <div className='sneaker-content d-flex justify-between'>
-              {/* custom dropdown menu */}
-              <Dropdown selected={selected} setSelected={setSelected} />
-              <br />
-              <br />
-              <br />
-              <div className='card-items d-flex justify-around flex-wrap ml-20'>
-                  {exItems
-                      .filter((obj) => obj.name.toLowerCase().includes(value.toLowerCase()))
-                      .map((obj, index) => (
-                          <Exclusive
-                              key={index}
-                              name={obj.name}
-                              image={obj.image}
-                              priceBefore={obj.priceBefore}
-                              price={obj.price}
-                          />
-                      ))}
-              </div>
-    </div>
-          
-    </div>
 
-  )
+    React.useEffect(() => {
+        loadData()
+    }, []);
+    const loadData = async () => {
+        setLoading(true);
+        axios.get(`http://localhost:3001/exclusive`)
+            .then((res) => {
+                setExItems(res.data);
+            });
+        setLoading(false);
+    }
+
+    const indexOfLast = currentPage * postsPerPage;
+    const indexOfFirst = indexOfLast - postsPerPage;
+  //  const currentPosts = exItems.slice(indexOfFirst, indexOfLast);
+
+    const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
+    return ( 
+        <div>
+         <Header active={active}/>
+        <div className='sneaker-wrapper'>
+        <div className='sneakers ml-50 mr-50 d-flex justify-between '>
+            <Dropdown selected={selected}
+                // options = {options}
+                setSelected={setSelected} />
+            <div className='search-wrapper'>
+            <div className='search-header d-flex align-center justify-center '>
+                <div className="search-container  mb-25">
+                    <div className='search-block d-flex align-center justify-center'>
+                        <img className='mr-20 mt-10 mb-10' src='images/search.svg' width={12} height={13} ></img>
+                        <input placeholder='Search...'
+                            value={value}
+                            onChange={(event) => setValues(event.target.value)
+                            }
+                        ></input>
+                        {value && (<img
+                            onClick={resetInputField}
+                            className='mr-5 mt-10 mb-5 remove'
+                            src='/images/remove-btn.svg'
+                            width={12} height={13}
+                        ></img>)}
+                    </div>
+                </div>
+            </div> 
+                <div className='sneaker-content d-flex justify-between'>
+                    <div className='card-items'>
+                        {exItems
+                            .slice(indexOfFirst, indexOfLast)
+                            .filter((obj) => obj.name.toLowerCase().includes(value.toLowerCase()))
+                            .map((obj, index) => (
+                                <Exclusive
+                                    key={index}
+                                    name={obj.name}
+                                    image={obj.image}
+                                    priceBefore={obj.priceBefore}
+                                    price={obj.price}
+                                />
+                            ))}
+                    </div>
+                </div>
+                <Pagination
+                        currentPage={currentPage}
+                        onArrow={setCurrentPage}
+                        postsPerPage={postsPerPage}
+                        totalPosts={exItems.length}
+                        paginate={paginate}
+                />
+            </div>
+        </div>
+        </div>
+        </div>
+    )
 }
 
 export default Sneakers;

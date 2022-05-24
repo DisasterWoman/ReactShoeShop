@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer';
 
 import About from './pages/About/About';
 import Sneakers from './pages/Sneakers/Sneakers';
+import Accessories from './pages/Accessories/Accessories';
+
 
 export const GlobalContext = React.createContext({});
 
@@ -16,14 +18,19 @@ function App() {
   const [exItems, setExItems] = React.useState([]);
 
   React.useEffect(() => {
-    axios.get('http://localhost:3001/info')
-      .then((res) => {
-        setItems(res.data);
-      });
-    axios.get('http://localhost:3001/exclusive')
-      .then((res) => {
-        setExItems(res.data);
-      });
+    async function fetchData() {
+      try {
+        axios.get('http://localhost:3001/info')
+          .then((res) => {
+            setItems(res.data);
+          });
+      }
+      catch (error) {
+    console.error('error making request')
+   }
+    }
+     fetchData();
+
   }, [])
 
 
@@ -40,6 +47,19 @@ function App() {
         </Route>
         <Route path='/sneakers' exact>
           <Sneakers />
+        </Route>
+        <Route path='/accessories' exact>
+          <Header />
+          <Accessories />
+        </Route>
+        <Route path='/contacts' exact>
+          <Header />
+        </Route>
+        <Route path='/delivery' exact>
+          <Header />
+        </Route>
+        <Route path='/clothes' exact>
+          <Header />
         </Route>
         <Footer/>
       </div>

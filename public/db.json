@@ -3,144 +3,343 @@
         {
             "id": 1,
             "title": "Nike Blazer Mid Suede",
-            "priceBefore": 3500,
-            "price": 2500,
+            "priceBefore": 300,
+            "price": 250,
             "imageUrl": "./images/1-slider.png"
         },
         {
             "id": 2,
             "title": "Nike Air Max 270",
-            "priceBefore": 2500,
-            "price": 1400,
+            "priceBefore": 250,
+            "price": 140,
             "imageUrl": "./images/2-slider.png"
         },
         {
             "id": 3,
             "title": "Nike air huaracher",
-            "priceBefore": 1000,
-            "price": 850,
+            "priceBefore": 100,
+            "price": 85,
             "imageUrl": "./images/3-slider.png"
         },
         {
             "id": 4,
             "title": "Nike Blazer Mid Suede",
-            "priceBefore": 1600,
-            "price": 1100,
+            "priceBefore": 160,
+            "price": 110,
             "imageUrl": "./images/4-slider.png"
         },
         {
             "id": 5,
             "title": "Under Armour Curry 8",
-            "priceBefore": 1300,
-            "price": 800,
+            "priceBefore": 130,
+            "price": 80,
             "imageUrl": "/images/5-slider.jpg"
         },
         {
             "id": 6,
             "title": "Jordan Air Jordan 11",
-            "priceBefore": 2200,
-            "price": 1900,
+            "priceBefore": 220,
+            "price": 190,
             "imageUrl": "/images/8-slider.jpg"
         },
         {
             "id": 7,
             "title": "Nike LeBron XVIII",
-            "priceBefore": 1200,
-            "price": 900,
+            "priceBefore": 120,
+            "price": 90,
             "imageUrl": "/images/9-slider.jpg"
         },
         {
             "id": 8,
             "title": "Nike Lebron XVIII Low ",
-            "priceBefore": 1600,
-            "price": 1000,
+            "priceBefore": 160,
+            "price": 100,
             "imageUrl": "/images/10-slider.jpg"
         }
     ],
-
     "exclusive": [
         {
             "id": 1,
             "image": "./images/1-exclusive.png",
             "name": "Jordan Delta 2",
-            "priceBefore": 1200,
-            "price":900
+            "priceBefore": 120,
+            "price": 90
         },
         {
             "id": 2,
             "image": "./images/2-exclusive.png",
             "name": "Nike Air Jordan XT",
-            "priceBefore": 1400,
-            "price":1200
+            "priceBefore": 140,
+            "price": 120
         },
         {
             "id": 3,
             "image": "./images/3-exclusive.png",
             "name": "RS-X-INTL Game",
             "priceBefore": 1200,
-            "price":900
+            "price": 900
         },
         {
             "id": 4,
             "image": "./images/4-exclusive.png",
             "name": "NMD 1 Refined",
-            "priceBefore": 1100,
-            "price":1000
+            "priceBefore": 110,
+            "price": 100
         },
         {
             "id": 5,
             "image": "./images/5-exclusive.png",
             "name": "Superstar Classic",
-            "priceBefore": 900,
-            "price":500
+            "priceBefore": 90,
+            "price": 50
         },
         {
             "id": 6,
             "image": "./images/6-exclusive.png",
             "name": "Puma X Aka Boku",
-            "priceBefore": 1200,
-            "price":750
+            "priceBefore": 120,
+            "price": 75
         },
         {
             "id": 7,
             "image": "./images/7-exclusive.png",
             "name": "RS-X-INTL Game",
-            "priceBefore": 1250,
-            "price":800
+            "priceBefore": 125,
+            "price": 80
         },
         {
             "id": 8,
             "image": "./images/8-exclusive.png",
             "name": "Suede Classic",
-            "priceBefore": 1230,
-            "price":800
+            "priceBefore": 123,
+            "price": 80
         },
         {
             "id": 9,
             "image": "./images/9-exclusive.png",
             "name": "NMD 1 Refined",
-            "priceBefore": 1230,
-            "price":800
+            "priceBefore": 123,
+            "price": 80
         },
         {
             "id": 11,
             "image": "./images/11-exclusive.png",
             "name": "Adiddas Beluga",
-            "priceBefore": 1230,
-            "price":940
+            "priceBefore": 230,
+            "price": 200
+        },
+        {
+            "id": 12,
+            "image": "./images/12-exclusive.png",
+            "name": "Balenciaga Bubblegum",
+            "priceBefore": 123,
+            "price": 94
+        },
+        {
+            "id": 13,
+            "image": "./images/13-exclusive.png",
+            "name": "Balenciaga Pink",
+            "priceBefore": 70,
+            "price": 34
+        },
+        {
+            "id": 14,
+            "image": "./images/14-exclusive.png",
+            "name": "Pink Purple",
+            "priceBefore": 110,
+            "price": 88
+        },
+        {
+            "id": 15,
+            "image": "./images/15-exclusive.png",
+            "name": "Nike Blazer Mid Suede",
+            "priceBefore": 300,
+            "price": 250
+        },
+        {
+            "id": 16,
+            "image": "./images/16-exclusive.png",
+            "name": "Nike Air Max 270",
+            "priceBefore": 250,
+            "price": 140
+        },
+        {
+            "id": 17,
+            "image": "./images/17-exclusive.png",
+            "name": "Nike air huaracher",
+            "priceBefore": 100,
+            "price": 85
+        },
+        {
+            "id": 18,
+            "image": "./images/18-exclusive.png",
+            "name": "Nike Blazer Mid Suede",
+            "priceBefore": 160,
+            "price": 110
+        },
+        {
+            "id": 19,
+            "image": "./images/19-exclusive.png",
+            "name": "All Star Classic",
+            "priceBefore": 65,
+            "price": 60
+        },
+        {
+            "id": 20,
+            "image": "./images/20-exclusive.png",
+            "name": "All Star Classic",
+            "priceBefore": 80,
+            "price": 70
+        },
+        {
+            "id": 21,
+            "image": "./images/21-exclusive.png",
+            "name": "Nike Blazer",
+            "priceBefore": 80,
+            "price": 70
+        },
+        {
+            "id": 22,
+            "image": "./images/22-exclusive.png",
+            "name": "Nike Blazer",
+            "priceBefore": 120,
+            "price": 90
+        },
+        {
+            "id": 23,
+            "image": "./images/23-exclusive.png",
+            "name": "Nike Blazer",
+            "priceBefore": 90,
+            "price": 60
+        },
+        {
+            "id": 24,
+            "image": "./images/24-exclusive.png",
+            "name": "Nike Blazer",
+            "priceBefore": 200,
+            "price": 180
+        },
+        {
+            "id": 25,
+            "image": "./images/25-exclusive.png",
+            "name": "All Star Classic",
+            "priceBefore": 70,
+            "price": 60
         }
     ],
-    "options":[
-            "Sneakers ",
-             "Clothes",
-             "Accessories"
-        
+    "accessories":[
+            {
+                "id": 1,
+                "image": "./images/1-accessories.png",
+                "name": "Nike Red Classic",
+                "priceBefore": 30,
+                "price": 25
+            },
+            {
+                "id": 2,
+                "image": "./images/2-accessories.png",
+                "name": "JWA Pink-Red",
+                "priceBefore": 35,
+                "price": 25
+            },
+            {
+                "id": 3,
+                "image": "./images/3-accessories.png",
+                "name": "Vans Black",
+                "priceBefore": 50,
+                "price": 30
+            },
+            {
+                "id": 4,
+                "image": "./images/4-accessories.png",
+                "name": "Chanel Pink",
+                "priceBefore": 30,
+                "price": 25
+            },
+            {
+                "id": 5,
+                "image": "./images/5-accessories.png",
+                "name": "Nike Black Classic",
+                "priceBefore": 30,
+                "price": 25
+            },
+            {
+                "id": 6,
+                "image": "./images/6-accessories.png",
+                "name": "Jordan Blue",
+                "priceBefore": 40,
+                "price": 30
+            },
+            {
+                "id": 7,
+                "image": "./images/7-accessories.png",
+                "name": "Converse Wheat",
+                "priceBefore": 30,
+                "price": 25
+            },
+            {
+                "id": 8,
+                "image": "./images/8-accessories.png",
+                "name": "LA Pink",
+                "priceBefore": 55,
+                "price": 35
+            },
+            {
+                "id": 9,
+                "image": "./images/9-accessories.png",
+                "name": "Nike Sky",
+                "priceBefore": 30,
+                "price": 25
+            },
+            {
+                "id": 10,
+                "image": "./images/10-accessories.png",
+                "name": "NY Yankees Cap",
+                "priceBefore": 40,
+                "price": 25
+            },
+            {
+                "id": 11,
+                "image": "./images/11-accessories.png",
+                "name": "LA Blue",
+                "priceBefore": 40,
+                "price": 25
+            },
+            {
+                "id": 12,
+                "image": "./images/12-accessories.png",
+                "name": "NY Yankees",
+                "priceBefore": 65,
+                "price": 25
+            },
+            {
+                "id": 13,
+                "image": "./images/13-accessories.png",
+                "name": "Red Cassic cap",
+                "priceBefore": 40,
+                "price": 25
+            },
+            {
+                "id": 14,
+                "image": "./images/14-accessories.png",
+                "name": "NY",
+                "priceBefore": 50,
+                "price": 35
+            }
     ],
-    "brands":[
-    "Adidas", "Jordan", "Nike", "Fila", "Gucci", "Balenciaga"
+    "options": [
+        "Sneakers ",
+        "Clothes",
+        "Accessories"
     ],
-    "size": [
-        32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46
+    "brands": [
+        "Adidas",
+        "Jordan",
+        "Nike",
+        "Fila",
+        "Gucci",
+        "Balenciaga",
+        "Puma",
+        "New Balance"
     ]
-
 }

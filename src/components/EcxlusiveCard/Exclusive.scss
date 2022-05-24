@@ -1,0 +1,52 @@
+.exclusiveCard {
+    margin-right: 8px;
+    margin-bottom: 50px;
+    border: 1px solid #8A8A8A;
+    width: 200px;
+    height: 220px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background: #8A8A8A;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+
+    .heart {
+        padding: 8px;
+        //  margin: 1px;
+    }
+
+    .box {
+        font-family: 'Open Sans',
+            sans-serif;
+        width: 210px;
+        height: 65px;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        background: #fff;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+
+        .box-info {
+            .price {
+                font-weight: 700;
+                color: red;
+            }
+
+            span {
+                color: #8A8A8A;
+                font-size: 8px;
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .cart:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,33 @@
+
+    .custom-select{
+        border: 1px solid #fff;
+        position: relative;
+        width: 100px;
+        border-radius: 10px;
+        select {
+            appearance: none;
+            -webkit-box-shadow: 1px 3px 10px 3px rgba(184, 184, 184, 0.13);
+            -moz-box-shadow: 1px 3px 10px 3px rgba(184, 184, 184, 0.13);
+            box-shadow: 1px 3px 10px 3px rgba(184, 184, 184, 0.13);
+            font-size: 1rem;
+            padding: 1em 1.5em;
+            background: #000;
+            color: #fff;
+            border-radius: 10px;
+        }
+        option{
+            width: 300px;
+        }
+        .custom-arrow {
+            position: absolute;
+            display: block;
+            background: black;
+            border-radius: 0 10px  10px 0;
+            height: 3.3rem;
+            border: 0;
+            top: 0;
+            right: 0;
+            width: 3rem;
+        }
+    }
+
