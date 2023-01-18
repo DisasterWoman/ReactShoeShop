@@ -69,7 +69,7 @@ function Dropdown({ selected, setSelected}) {
                     {brands.map((brand, index) => (
                         <div className='dropdown-brand ml-10'   
                             key={index} >
-                            {brand}
+                            {brand.name}
                         </div>
                     ))}
                 </div>

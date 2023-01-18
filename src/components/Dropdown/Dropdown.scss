@@ -1,25 +1,27 @@
 .catalog {
-    width: 250px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 10px;
+  width: 250px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 10px;
 
-    p {
-        font-size: 1rem;
-        color: #fff;
-        font-weight: 700;
-    }
+  p {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+  }
 }
 .arrow {
-    transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
-h5{
-    font-size: 1rem;
-    margin: 5px;
+h5 {
+  font-size: 1rem;
+  margin: 5px;
 }
 
-.dropdown{
-.dropdown-content, .brand-content, .size-content{
+.dropdown {
+  .dropdown-content,
+  .brand-content,
+  .size-content {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -30,8 +32,8 @@ h5{
     margin-top: 3px;
     width: 250px;
     padding: 5px;
-}
-.size-box{
+  }
+  .size-box {
     font-size: 12px;
     font-weight: bold;
     color: #000;
@@ -41,39 +43,43 @@ h5{
     border-radius: 10px;
     width: 30px;
     height: 30px;
-}
-    .socialBtn {
-        margin: 10px;
-        margin-bottom: 15px;
-        width: 35px;
-        height: 35px;
-        border-radius: 14px;
-        background: #FFFFFF;
-        -webkit-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
-        -moz-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
-        box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+  }
+  .socialBtn {
+    margin: 10px;
+    margin-bottom: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 14px;
+    background: #ffffff;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(244, 245, 246, 0.2);
+  }
+  img {
+    margin: 8px;
+  }
+  .socialBtn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .brand-content,
+  .dropdown-content {
+    .dropdown-brand,
+    .dropdown-item {
+      color: #fff;
+      display: flex;
+      margin: 5px;
     }
-        img {
-            margin: 8px;
-        }
-        .socialBtn:hover {
-            -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            transform: scale(1.1);
-        }
-
-.brand-content, .dropdown-content{
-    .dropdown-brand, .dropdown-item{
-        color: #fff;
-        display: flex;
-        margin: 5px;
-    }  
-}
+  }
 }
 
-@media (max-width:900px) {
-.dropdown, .dropdown-content,
-.brand-content, .size-content {
+@media (max-width: 900px) {
+  .dropdown,
+  .dropdown-content,
+  .brand-content,
+  .size-content {
     display: none;
-}
+  }
 }

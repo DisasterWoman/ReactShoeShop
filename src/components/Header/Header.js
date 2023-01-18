@@ -8,46 +8,53 @@ function Header() {
   const showMenu = () => { setActive(!active) }
   return (
     <header className="header">
-      <div className='logo cu-p'>
-      <Link to='/' >
-          <img className='logo mr-20' alt='logo' src='/images/logo.png' width={220} height={70} ></img>
-      </Link>
+      <div className="logo cu-p">
+        <Link to="/">
+          <img
+            className="logo mr-20"
+            alt="logo"
+            src="/images/logo.png"
+            width={220}
+            height={70}
+          ></img>
+        </Link>
       </div>
-       <div className='menu-icon'>
-        <MaterialIcon color='#fff' icon="menu" onClick={showMenu} /></div>
-      <nav className={active ? 'slider active' : 'slider'}>
-        <ul onClick={showMenu} >
-          <div className='closed' onClick={showMenu} >
-            <MaterialIcon icon="close" color='#fff' />
+      <div className="menu-icon">
+        <MaterialIcon color="#fff" icon="menu" onClick={showMenu} />
+      </div>
+      <nav className={active ? "slider active" : "slider"}>
+        <ul onClick={showMenu}>
+          <div className="closed" onClick={showMenu}>
+            <MaterialIcon icon="close" color="#fff" />
           </div>
           <li>
-            <Link to='/'>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to='/about'>About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to='/sneakers'>Sneakers</Link>
+            <Link to="/sneakers">Sneakers</Link>
           </li>
           <li>
-            <Link to='/accessories'>Accessories</Link>
+            <Link to="/accessories">Accessories</Link>
           </li>
           <li>
-            <Link to='/contacts'>Contacts</Link>
+            <Link to="/clothes">Clothes</Link>
           </li>
           <li>
-            <Link to='/delivery'>Delivery</Link>
+            <Link to="/delivery">Delivery</Link>
           </li>
-          <li className='green'>
-            <Link to='/signup'>Sign Up</Link>
+          <li className="green">
+            <Link to="/signup">Sign Up</Link>
           </li>
-      </ul>
+        </ul>
       </nav>
-      <div className='cartBtn'>
-        <img src='/images/ccart.png' width={20} height={20}></img>
+      <div className="cartBtn">
+        <img src="/images/ccart.png" width={20} height={20}></img>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header;

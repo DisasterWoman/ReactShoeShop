@@ -1,0 +1,50 @@
+.f-catalog {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 5px;
+
+  .caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+    margin-top: 5px;
+  }
+    .caretRotate {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transform: rotate(180deg);
+    transition: 0.3s;
+  }
+}
+.category {
+ 
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.filter-brands {
+
+}
+.range{
+
+}
+.star{
+  
+}
+.f-catalog,.category,.filter-brands, .range,.star{
+ padding: 15px;
+ margin: 3px;
+ border: 1px solid;
+ margin-left: 15px;
+ border-radius: 8px;
+}

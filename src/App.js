@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import Sneakers from './pages/Sneakers/Sneakers';
 import Accessories from './pages/Accessories/Accessories';
+import Clothes from './pages/Clothes/Clothes';
 
 
 export const GlobalContext = React.createContext({});
@@ -35,33 +36,31 @@ function App() {
 
 
   return (
-    <GlobalContext.Provider value={{items, exItems, setExItems}}>
-      <div className='wrapper'>
-        <Route path='/' exact>
+    <GlobalContext.Provider value={{ items, exItems, setExItems }}>
+      <div className="wrapper">
+        <Route path="/" exact>
           <Header />
           <Home />
         </Route>
-        <Route path='/about' exact>
+        <Route path="/about" exact>
           <Header />
           <About />
         </Route>
-        <Route path='/sneakers' exact>
+        <Route path="/sneakers" exact>
           <Sneakers />
         </Route>
-        <Route path='/accessories' exact>
+        <Route path="/accessories" exact>
           <Header />
           <Accessories />
         </Route>
-        <Route path='/contacts' exact>
+        <Route path="/clothes" exact>
+          <Header />
+          <Clothes />
+        </Route>
+        <Route path="/delivery" exact>
           <Header />
         </Route>
-        <Route path='/delivery' exact>
-          <Header />
-        </Route>
-        <Route path='/clothes' exact>
-          <Header />
-        </Route>
-        <Footer/>
+        <Footer />
       </div>
     </GlobalContext.Provider>
   );

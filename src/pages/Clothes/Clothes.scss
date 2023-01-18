@@ -1,0 +1,23 @@
+.clothes{
+    display: flex;
+    flex-direction: column;
+    //height: 100vh;
+    margin-left: 26px;
+    
+}
+
+// .clothes_wrap,.clothes_panel-wrap,.clothes_list {
+// overflow-y: auto;
+// }
+.clothes_wrap{
+    display: flex;
+    flex:1;
+}
+.clothes_panel-wrap{
+ flex-basis: 290px;
+}
+.clothes_list{
+ display: flex;
+ flex: 1;
+ padding: 1rem;
+}
